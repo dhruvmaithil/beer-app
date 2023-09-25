@@ -1,0 +1,28 @@
+.beerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .beerCard {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #01CDE1;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .beerCard img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .searchInput {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #01CDE1;
+    margin-bottom: 20px;
+  }
+  
