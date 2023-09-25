@@ -22,7 +22,7 @@ npm install
 or
 
 Using Yarn:
-yarn intall
+yarn install
 
 ## Run the Beer app:
 
