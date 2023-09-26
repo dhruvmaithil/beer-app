@@ -18,13 +18,17 @@ function BeerList() {
   }, []);
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search beers..."
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className={styles.searchInput}
-      />
+    <div >
+      <div className= {styles.beerColor}>
+        <h1>Beer App</h1>
+        <input
+          type="text"
+          placeholder="Search beers..."
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className={styles.searchInput}
+        />
+      </div>
+
       <div className={styles.beerList}>
         {beers
           .filter(beer => beer.name.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -32,7 +36,7 @@ function BeerList() {
             <div key={beer.id} className={styles.beerCard}>
               <img src={beer.image_url} alt={beer.name} />
               <h3>{beer.name}</h3>
-              <p>Tagline: {beer.tagline}</p>
+              <p>{beer.tagline}</p>
               <p>ABV: {beer.abv}</p>
             </div>
           ))}

@@ -1,3 +1,7 @@
+.App-title {
+  -webkit-text-fill-color:rgb(50,0,123, .80);
+  background-color : rgb(50,0,123, .20);
+}
 .App {
   text-align: center;
 }
